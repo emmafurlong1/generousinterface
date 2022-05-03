@@ -3,12 +3,12 @@ const api_url = 'https://api.vam.ac.uk/v2/objects/search?min_length=2&max_length
             const response = await fetch(api_url);
             const data = await response.json();
             const {records} = data;
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 20; i++) {
                 var newElement = document.createElement('img');
-                newElement.id = "image"+[i]; newElement.className = "image";
+                newElement.id = "image"+[i];
                 document.body.appendChild(newElement);
                 newElement = document.createElement('a');
-                newElement.id = "title"+[i]; newElement.className = "title";
+                newElement.id = "title"+[i];
                 document.body.appendChild(newElement);
                 var image = 'image'+[i];
                 var title = 'title'+[i];
