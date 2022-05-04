@@ -3,7 +3,7 @@ const api_url = 'https://api.vam.ac.uk/v2/objects/search?min_length=2&max_length
             const response = await fetch(api_url);
             const data = await response.json();
             const {records} = data;
-            for (let i = 0; i < 100; i++) {
+            for (let i = 0; i < 20; i++) {
                 var container = 'container'+[i];
                 var image = 'image'+[i];
                 var artist = 'artist'+[i];

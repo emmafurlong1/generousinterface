@@ -54,3 +54,11 @@ div {
 .artist {
   display: block;
 }
+
+#artefact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+}
+
+
