@@ -12,7 +12,7 @@ main {
   color: #ffffff;
 }
 
-header {
+header, footer {
   background-color: #14213D;
   color: #ffffff;
   padding: 10px;
@@ -36,4 +36,21 @@ li {
 #back a {
   text-decoration: none;
   color: #fca311;
+}
+
+#sectiongrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 10px;
+  row-gap: 50px;
+}
+
+div {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+
+.artist {
+  display: block;
 }

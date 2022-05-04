@@ -9,7 +9,7 @@ const api_url = 'https://api.vam.ac.uk/v2/object/'+ object +'?response_format=js
             const {meta} = data;
             const imagelink = meta.images._primary_thumbnail;
             imagelarge = imagelink.replace('!100,100','!500,500')
-            document.getElementById('image').src = imagelarge
+            document.getElementById('image').src = imagelarge;
             document.getElementById('title').textContent = record.titles[0].title;
             document.getElementById('accyear').textContent = record.accessionYear;
             document.getElementById('origin').textContent = record.placesOfOrigin[0].place.text;
