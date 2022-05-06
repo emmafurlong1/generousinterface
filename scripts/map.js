@@ -1,9 +1,11 @@
+//leaflet.js plugin
 const map = L.map('map').setView([0, 0], 2);
 const attribution = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
 const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 const tiles = L.tileLayer(tileUrl, {attribution});
 tiles.addTo(map);
 
+//Setting the data for the markers
 var marker = L.marker([48.8566, 2.3522]).addTo(map); //Paris
 marker.bindPopup("Paris, count: 46252").openPopup();
 var marker = L.marker([37.0902, -95.7129]).addTo(map); //United States
@@ -36,5 +38,5 @@ var marker = L.marker([41.9028, 12.4964]).addTo(map); //Rome
 marker.bindPopup("Rome, count: 5353").openPopup();
 var marker = L.marker([36.2048, 138.2529]).addTo(map); //Japan
 marker.bindPopup("Japan, count: 4925").openPopup();
-var marker = L.marker([32.4279, 53.6880]).addTo(map); //
+var marker = L.marker([32.4279, 53.6880]).addTo(map); //Iran
 marker.bindPopup("Iran, count: 4780").openPopup();
