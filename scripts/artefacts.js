@@ -22,7 +22,7 @@ const api_url = 'https://api.vam.ac.uk/v2/objects/search?min_length=2&max_length
                 document.getElementById(image).setAttribute("alt", records[i]._primaryTitle); //setting the image alt as the primary title
                 document.getElementById(artist).textContent = records[i]._primaryMaker.name; //setting the artist name 
                 document.getElementById(artist).href ='details.html?object='+ records[i].systemNumber; //setting the link to include the system number
-                document.getElementById(image).href ='details.html?object='+ records[i].systemNumber; //setting the link to include the system number
+                document.getElementById(image).setAttribute("href", 'details.html?object='+ records[i].systemNumber); //setting the link to include the system number
             }         
         }
         getData(); //calling get data function
