@@ -60,39 +60,3 @@ div {
   grid-template-columns: 1fr 2fr;
   gap: 25px;
 }
-
-.box {
-  text-align: center;
-}
-
-.button {
-  transition: all 0.3s ease-out;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.wrapper {
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.wrapper .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-}
