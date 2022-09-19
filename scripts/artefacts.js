@@ -16,13 +16,13 @@ const api_url = 'https://api.vam.ac.uk/v2/objects/search?min_length=2&max_length
                 newElement = document.createElement('a'); //creating the artist name as a link
                 newElement.id = artist; newElement.className = "artist";
                 document.getElementById(container).appendChild(newElement);
+                
                 const imagelink = records[i]._images._primary_thumbnail; //setting the image from records
                 const imagelarge = imagelink.replace('!100,100','!200,200') //setting image size
                 document.getElementById(image).src = imagelarge; //displaying image
                 document.getElementById(image).setAttribute("alt", records[i]._primaryTitle); //setting the image alt as the primary title
                 document.getElementById(artist).textContent = records[i]._primaryMaker.name; //setting the artist name 
                 document.getElementById(artist).href ='details.html?object='+ records[i].systemNumber; //setting the link to include the system number
-                document.getElementById(image).setAttribute("href", 'details.html?object='+ records[i].systemNumber); //setting the link to include the system number
             }         
         }
         getData(); //calling get data function
